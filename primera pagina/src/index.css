@@ -1,0 +1,30 @@
+/* Reset mínimo y layout alto-arriba */
+* { box-sizing: border-box; }
+html, body, #root { height: auto; }
+body {
+  margin: 0;
+  background: #1a1a1a;   /* igual al que ya tienes */
+  color: #eaeaea;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, "Helvetica Neue", Arial, "Noto Sans", "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/* Elimina centrado y padding grande del template */
+#root {
+  max-width: none;   /* responsive: se ajusta en móviles */
+  margin: 0;     /* centrado solo horizontal, SIN centrar texto */
+  padding: 16px;      /* espacio razonable arriba */
+  text-align: left;
+}
+
+/* Espaciado suave en las secciones */
+main { padding: 12px 0; }
+
+/* Imágenes fluidas */
+img { max-width: 100%; height: auto; display: block; }
+
+/* Titles */
+h1, h2, h3 { margin: 0 0 8px; }
+p { margin: 0 0 8px; }
+
+/* Listas sin viñetas para tus usuarios */
+ul { padding-left: 0; list-style: none; }
